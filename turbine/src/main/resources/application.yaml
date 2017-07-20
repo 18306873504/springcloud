@@ -1,0 +1,12 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: turbine
+eureka:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+turbine:
+  app-config: compute-service
+   aggregator:
+   turbine.aggregator.clusterConfig: compute-service
